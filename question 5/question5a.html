@@ -1,0 +1,50 @@
+<!--5. Create a sign-up and sign-in form with proper validation.
+a. Sign-up form should have a first name, last name, email, password, confirm password, age, gender, and agree to terms and conditions fields at minimum (You can add any other if you like)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sign Up</title>
+</head>
+
+<body>
+      <h1>Sign Up Page</h1>
+      <form action="">
+            <label for="First Name">First Name</label>
+            <input type="text" placeholder="First Name" id="First Name" name="First Name" required min="3">
+            <br>
+            <label for="Last Name">Last Name</label>
+            <input type="text" placeholder="Last Name" id="Last Name" name="Last Name" required min="3">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="Email" name="Email" required min="3">
+            <br>
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Password" id="Password" name="Password" required min="8">
+            <br>
+            <label for="Confirm Password">Confirm Password</label>
+            <input type="password" name="Confirm Password" id="Confirm Password" placeholder="Confirm Password" required
+                  min="8">
+            <br>
+            <label for="Age">Age</label>
+            <input type="number" id="Age" placeholder="Age" name="Age" min="1" max="150" required>
+            <br>
+            <label for="">Gender:
+                  <input type="radio" id="male" value="male" name="gender" checked />
+                  <label for="male">Male</label>
+                  <input type="radio" id="female" value="female" name="gender" />
+                  <label for="female">Female</label>
+            </label>
+            <br>
+            <input type="checkbox" name="term and condition" id="term and condition" required>
+            <label for="term and condition">Agree to terms and condition</label>
+            <br>
+            <button type="submit">Register</button>
+            <button><a href="sign_in.html">Sign In</a></button>
+      </form>
+</body>
+
+</html>
